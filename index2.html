@@ -23,8 +23,11 @@
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script>
-      function buttonClicked() {
+      function button1Clicked() {
         alert("Hello, World!")
+      }
+      function button2Clicked() {
+        alert("Hello, Other World!")
       }
     </script>
     <!-- Always shows a header, even in smaller screens. -->
@@ -37,9 +40,7 @@
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation. We hide it in small screens. -->
           <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="index2.html"
-              >Second Website</a
-            >
+            <a class="mdl-navigation__link" href="index.html">First Website</a>
             <a class="mdl-navigation__link" href=""></a>
             <a class="mdl-navigation__link" href=""></a>
             <a class="mdl-navigation__link" href=""></a>
@@ -61,7 +62,20 @@
           <!-- Accent-colored raised button with ripple -->
           <button
             class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            onclick="buttonClicked()"
+            onclick="button1Clicked()"
+          >
+            Click me!
+          </button>
+        </div>
+      </main>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <!--Text below header-->
+          <div class="page-content">Want more? try this one too</div>
+          <!-- Accent-colored raised button with ripple -->
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="button2Clicked()"
           >
             Click me!
           </button>
